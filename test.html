@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Welcome to DesignBi!</title>
+    
+    <link rel="stylesheet" href="test.css">
+    <link rel="stylesheet" href="all.min.css">
+    
+</head>
+
+<nav class="navbar">
+    <ul class="navbar__list">
+        <li class="navbar__item">
+            <a href="#home" class="navbar__link navbar__link--active"><span class="fa fa-home"></span> Home</a>
+        </li>
+        <li class="navbar__item">
+            <a href="#about" class="navbar__link"><span class="far fa-question-circle"></span> About</a>
+        </li>
+        <li class="navbar__item">
+            <a href="#services" class="navbar__link"><i class="fas fa-drafting-compass"></i> Services</a>
+        </li>
+        <li class="navbar__item">
+            <a href="#contact" class="navbar__link"><i class="fa fa-address-book"></i> Contact</a>
+        </li>
+    </ul>
+</nav>
+</html>
+
+
+<section class="window window--maximised" id="home">
+
+</section>
+<section class="window" id="about"><h2>About</h2>
+<div class="aboutstyle">
+<p>DesignBi is an Architectural Service and Graphical Design company, based in Northamptonshire, offering services nationwide. </p>
+
+    <p>The primary purpose of our company is to provide low cost services to the local community whilst offering a high quality design concept that meets the requirements of clientele and provides an innovative successful design suitable to client requirements. </p>
+    
+    <p>We have completed both residential and commercial projects with expertise ranging from project management to planning and building regulations. The projects are known to vary in complexity which makes it crucial for us to offer a bespoke service to each individual client. </p> 
+    
+    <p>We have developed a great understanding with the local authority which has allowed us to build a reputable name both within the industry and local community. In addition, we have an in house team of approved contractors which gives us the advantage of completing the project from start to finish.</p>
+</div>
+</section>
+<section class="window" id="services"><h2>Services</h2>
+    <div class="boxes">
+    <div class="servicebox">
+        <h2>Architectural Services</h2>
+        <ul>
+            <li>Architectural Design</li>
+            <li>Planning Applications</li>
+            <li>Site Supervision and Control</li>
+            <li>Project Tendering</li>
+            <li>Project Management</li>
+            <li>Building Regulations</li>
+            <li>Domestic Extension Design</li>
+            <li>Refurbishment and Conversion</li>
+            <li>HMO Drawings and Applications</li>
+            <li>Rendering and 3D Visuals</li>
+        </ul>
+    </div>
+    <div class="graphicsbox">
+        <h2>Graphical Design Services</h2>
+        <ul>
+            <li>Architectural Design</li>
+            <li>Planning Applications</li>
+            <li>Site Supervision and Control</li>
+            <li>Project Tendering</li>
+            <li>Project Management</li>
+            <li>Building Regulations</li>
+            <li>Domestic Extension Design</li>
+            <li>Refurbishment and Conversion</li>
+            <li>HMO Drawings and Applications</li>
+            <li>Rendering and 3D Visuals</li>
+        </ul>
+    </div>
+    </div>
+</section>
+<section class="window" id="contact"><h2>Connect with us!</h2>
+    <div class="s4">
+        <div class="s4p">
+                <p>Director</p>
+                <p>Bilal Khan ACIAT</p>
+                <p>Architect Technologist Bsc(Hons)</p>
+                <p>07544442655</p>
+                <p>designbi.bk@gmail.com</p>
+        </div>
+        <div class="s4p">
+            <p>Director</p>
+            <p>Irfan Razaq ACIAT</p>
+            <p>Architect Technologist Bsc(Hons)</p>
+            <p>07467428415</p>
+            <p>designbi.ir@gmail.com</p>
+        <a href="www.facebook.com/designbi.uk">
+        </div>
+        <div class="s4p2">
+            <p>General Enquiries: designbi.uk@gmail.com</p>
+        <a href="www.facebook.com/designbi.uk">
+        <div class="socialmediafb">
+            <i class="fab fa-facebook-square fa-7x"></i>
+        </div></a>
+        <a href="www.instagram.com/design.bi/">
+            <div class="socialmediaig">
+                <i class="fab fa-instagram fa-7x"></i>
+            </div></a>
+    </div>
+    
+</section>
+<section class="window" id="gallery"><h2>gallery window</h2></section>
+
+<script>
+    const links = document.querySelectorAll(".navbar__link");
+const windows = document.querySelectorAll(".window");
+
+links.forEach((link) => {
+    link.addEventListener("click", (e) => {
+        e.preventDefault();
+
+        links.forEach((link) =>
+                      link.classList.remove("navbar__link--active")
+                     );
+
+        e.target.classList.add("navbar__link--active");
+
+        windows.forEach((window) => {
+            if (window.classList.contains("window--maximised")) {
+                minimiseWindow(window);
+            }
+        });
+        maximiseWindow(document.querySelector(e.target.hash));
+    });
+});
+
+function minimiseWindow(window) {
+    window.classList.add("window--minimised");
+    links.forEach((link) =>
+        link.classList.remove("navbar__link--active")
+    );
+    setTimeout(() => {
+        window.classList.remove("window--maximised");
+        window.classList.remove("window--minimised");
+    }, 500);
+}
+
+function maximiseWindow(window) {
+    window.classList.add("window--maximised");
+}
+</script>
+<body>
+    <div id="particles-js"></div>
+<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script>
+        particlesJS.load('particles-js', 'particles.json',
+        function(){
+            console.log('particles.json loaded...')
+        })
+    </script>
+    </body>

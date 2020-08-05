@@ -208,8 +208,9 @@ body {
   display: grid;
   grid-auto-flow: column;
   grid-column-gap: 50px;
+  overflow: hidden;
   white-space: nowrap;
-  width: 100%;
+  width: fit-content;
   font-style: oblique;
 }
 
@@ -318,8 +319,7 @@ body {
 
   .boxes {
     grid-auto-flow: row;
-    position: relative;
-    left: 35%;
+    padding-left: 710px;
   }
 
   @media screen and (max-width: 1200px) {

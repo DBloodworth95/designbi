@@ -311,10 +311,12 @@ body {
   }
 
   .socialmediafb {
+    margin-left: -10%;
     transform: scale(0.3);
   }
 
   .socialmediaig {
+    margin-left: 5%;
     transform: scale(0.3);
    
   }

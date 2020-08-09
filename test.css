@@ -226,6 +226,15 @@ body {
   text-align: center;
 }
 
+.servicebox p {
+  padding-left: -50%;
+  padding-right: 50%;
+}
+.graphicsbox p {
+  padding-left: -50%;
+  padding-right: 50%;
+}
+
 @keyframes scale-in-top {
   0% {
     transform: scale(0);
@@ -300,26 +309,33 @@ body {
     border-radius: 50%;
     display: inline-flex;
     position: relative;
-    margin-top: 50px;
-    margin-right: 25px;
+    margin-top: 0px;
     color: inherit;
-    transform: scale(0.5);
+    transform: scale(0.3);
+    margin-left: 5%;
   }
 
   .socialmediaig {
     text-align: center;
-    margin-right: 25px;
     height: 110px;
     width: 100px;
     border-radius: 10%;
     display: inline-flex;
     position: relative;
-    transform: scale(0.5);
+    transform: scale(0.3);
+    margin-left: 15%;
   }
 
   .boxes {
     grid-auto-flow: row;
     padding-left: 710px;
+  }
+
+  .servicebox p {
+    display: inline-flex;
+  }
+  .graphicsbox p {
+    display: inline-flex;
   }
 
   @media screen and (max-width: 1200px) {

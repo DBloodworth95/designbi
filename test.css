@@ -301,29 +301,17 @@ body {
     transform: translate(-50%, -0%);
   }
 
-  .socialmediafb {
+  .s4p2 {
     text-align: center;
-    line-height: 220px;
-    height: 110px;
-    width: 60px;
-    border-radius: 50%;
-    display: inline-flex;
-    position: relative;
-    margin-top: 0px;
-    color: inherit;
+  }
+
+  .socialmediafb {
     transform: scale(0.3);
-    margin-left: 5%;
   }
 
   .socialmediaig {
-    text-align: center;
-    height: 110px;
-    width: 100px;
-    border-radius: 10%;
-    display: inline-flex;
-    position: relative;
     transform: scale(0.3);
-    margin-left: 15%;
+    margin-right: 10px;
   }
 
   .boxes {

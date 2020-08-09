@@ -301,7 +301,12 @@ body {
     transform: translate(-50%, -0%);
   }
 
+  .s4p2 p{
+    margin-left: 20px;
+  }
+
   .s4p2 {
+    position: relative;
     text-align: center;
   }
 
@@ -311,7 +316,7 @@ body {
 
   .socialmediaig {
     transform: scale(0.3);
-    margin-right: 10px;
+   
   }
 
   .boxes {

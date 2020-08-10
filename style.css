@@ -302,7 +302,9 @@ body {
   }
 
   .s4p2 p{
-    margin-left: 20px;
+    text-align: center;
+    width: fit-content;
+    position: relative;
   }
 
   .s4p2 {
@@ -311,12 +313,12 @@ body {
   }
 
   .socialmediafb {
-    margin-left: -10%;
+    
     transform: scale(0.3);
   }
 
   .socialmediaig {
-    margin-left: 5%;
+    
     transform: scale(0.3);
   }
 

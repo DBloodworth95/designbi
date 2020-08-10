@@ -141,21 +141,14 @@ body {
 
 .socialmediafb {
   text-align: center;
-  line-height: 220px;
-  height: 150px;
-  width: 150px;
-  border-radius: 50%;
+  height: 50%;
   display: inline-block;
   position: relative;
-  margin-top: 50px;
   color: inherit;
 }
 
 .socialmediaig {
   text-align: center;
-  height: 110px;
-  width: 110px;
-  border-radius: 10%;
   display: inline-block;
   position: relative;
 }
@@ -188,7 +181,7 @@ body {
 .socialmediaig:hover {
   background: #d6249f;
   background: radial-gradient(
-    circle at 30% 107%,
+    circle at 30% 70%,
     #fdf497 0%,
     #fdf497 5%,
     #fd5949 45%,

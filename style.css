@@ -223,7 +223,6 @@ body {
 .graphicsbox {
   display: inline-block;
   color: white;
-  text-align: center;
 }
 
 .servicebox p {
@@ -233,6 +232,7 @@ body {
 .graphicsbox p {
   padding-left: -50%;
   padding-right: 50%;
+  text-align: left;
 }
 
 @keyframes scale-in-top {
@@ -327,9 +327,11 @@ body {
 
   .servicebox p {
     display: inline-flex;
+    text-align: center;
   }
   .graphicsbox p {
     display: inline-flex;
+    text-align: center;
   }
 
   @media screen and (max-width: 1200px) {
